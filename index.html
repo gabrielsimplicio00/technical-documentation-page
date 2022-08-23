@@ -116,11 +116,11 @@
                 <p>The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.</p>
                 <p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
                 <code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
-                    WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
-                    //statements }</code>
+                WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
+                //statements }</code>
                 <p>However, object attributes are not protected, so the following statement is executed without problems.</p>
                 <code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
-                    "otherValue";</code>
+                "otherValue";</code>
             </div>
         </section>
         <section id="Data_types" class="main-section">
@@ -154,13 +154,13 @@
                 <p>Condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if statements.</code>
                 <p>You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:</p>
                 <code>if (condition_1) { statement_1; } else if (condition_2) {
-                    statement_2; } else if (condition_n) { statement_n; } else {
-                    statement_last; }</code>
+                statement_2; } else if (condition_n) { statement_n; } else {
+                statement_last; }</code>
                 <p>In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements:</p>
                 <code>if (condition) { statement_1_runs_if_condition_is_true;
-                    statement_2_runs_if_condition_is_true; } else {
-                    statement_3_runs_if_condition_is_false;
-                    statement_4_runs_if_condition_is_false; }</code>
+                statement_2_runs_if_condition_is_true; } else {
+                statement_3_runs_if_condition_is_false;
+                statement_4_runs_if_condition_is_false; }</code>
                 <p>It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when glancing over the code. For example, do not use the following code:</p>
                 <code>if (x = y) { /* statements here */ }</code>
                 <p>If you need to use an assignment in a conditional expression, a common practice is to put additional parentheses around the assignment. For example:</p>
@@ -196,27 +196,15 @@
             <div>
                 <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:</p>
                 <ul>
-                    <li>
-                        The name of the function.
-                    </li>
-                    <li>
-                        A list of arguments to the function, enclosed in parentheses and separated by commas.
-                    </li>
-                    <li>
-                        The JavaScript statements that define the function, enclosed in curly brackets, { }.
-                    </li>
+                    <li> The name of the function.</li>
+                    <li>A list of arguments to the function, enclosed in parentheses and separated by commas.</li>
+                    <li>The JavaScript statements that define the function, enclosed in curly brackets, { }.</li>
                 </ul>
-                <p>
-                    For example, the following code defines a simple function named square:
-                </p>
+                <p>For example, the following code defines a simple function named square:</p>
                 <code>function square(number) { return number * number; }</code>
-                <p>
-                    The function square takes one argument, called number. The function consists of one statement that says to return the argument of the function (that is, number) multiplied by itself. The return statement specifies the value returned by the function.
-                </p>
+                <p>The function square takes one argument, called number. The function consists of one statement that says to return the argument of the function (that is, number) multiplied by itself. The return statement specifies the value returned by the function.</p>
                 <code>return number * number;</code>
-                <p>
-                    Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.
-                </p>
+                <p>Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.</p>
             </div>
         </section>
         <section id="Reference" class="main-section">
