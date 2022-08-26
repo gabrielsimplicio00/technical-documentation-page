@@ -131,3 +131,7 @@ a:visited {
         margin-right: auto;
     }
 }
+
+#navbar a:hover {
+    color: rgb(133, 133, 133);
+}
